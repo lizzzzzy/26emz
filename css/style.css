@@ -1,0 +1,226 @@
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+@font-face {
+  font-family: 'PTSansRegular';
+  src: url('fonts/PTSansRegular/pt-sans-regular.eot');
+  src: url('fonts/PTSansRegular/pt-sans-regular.eot') format('embedded-opentype'), url('fonts/PTSansRegular/pt-sans-regular.woff2') format('woff2'), url('fonts/PTSansRegular/pt-sans-regular.woff') format('woff'), url('fonts/PTSansRegular/pt-sans-regular.ttf') format('truetype'), url('fonts/PTSansRegular/pt-sans-regular.svg#PTSansRegular') format('svg');
+}
+@font-face {
+  font-family: 'PTSansBold';
+  src: url('fonts/PTSansBold/pt-sans-bold.eot');
+  src: url('fonts/PTSansBold/pt-sans-bold.eot') format('embedded-opentype'), url('fonts/PTSansBold/pt-sans-bold.woff2') format('woff2'), url('fonts/PTSansBold/pt-sans-bold.woff') format('woff'), url('fonts/PTSansBold/pt-sans-bold.ttf') format('truetype'), url('fonts/PTSansBold/pt-sans-bold.svg#PTSansBold') format('svg');
+}
+* {
+  padding: 0;
+  margin: 0 ;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+section {
+  width: 980px;
+  height: 630px;
+  color: #fcfdfd;
+  clear: both;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin: 0 auto;
+}
+section aside {
+  width: 320px;
+  height: 630px;
+  background-color: #a7232e;
+  float: left;
+  text-align: left;
+  padding: 20px 0 20px 20px;
+  font-family: 'PTSansRegular';
+  font-size: 15px;
+  line-height: 20px;
+}
+section aside .logo p {
+  text-align: center;
+  padding: 0 0 20px 0;
+}
+section aside .logo p img {
+  margin-right: 20px;
+}
+section aside .contacts {
+  padding-bottom: 30px;
+}
+section aside .contacts a {
+  color: #fcfdfd;
+}
+section .article {
+  text-align: left;
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.6);
+  height: 100%;
+  padding: 20px;
+  float: right;
+  width: 660px;
+  height: 630px;
+}
+section .article .index {
+  font-size: 25px;
+  line-height: 30px;
+  color: #424242;
+}
+section .article p {
+  padding: 8px 0;
+  font-size: 20px;
+  line-height: 20px;
+}
+section .article .gallery {
+  padding-top: 10px;
+  overflow: hidden;
+}
+section .article .gallery img {
+  margin-right: 3px;
+}
+section .article .gallery img:last-child {
+  margin-right: 0px;
+}
+section .article .gallery .block_1 {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+section .article .gallery .block_2 {
+  float: right;
+  width: 50%;
+  text-align: center;
+}
+section .article .gallery a {
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 20px;
+  color: #424242;
+  padding: 0;
+}
+section .article .referenses h2 {
+  padding-bottom: 15px;
+  padding-top: 35px;
+}
+section .article .referenses a {
+  font-size: 20px;
+  line-height: 20px;
+  color: #424242;
+}
+section .article .referenses a:last-child {
+  padding-left: 80px;
+}
+section .portBox {
+  width: 660px;
+  height: 630;
+  float: right;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+  text-align: left;
+}
+section .portBox a {
+  font-size: 25px;
+  line-height: 30px;
+  color: #424242;
+}
+section .portBox h2 {
+  padding: 10px 0 25px 0;
+}
+section .portBox table {
+  text-align: center;
+  font-size: 20px;
+  line-height: 20px;
+  font-family: "PT Sans";
+}
+section .portBox table tr:first-child {
+  height: 50px;
+}
+section .portBox table tr:nth-child(2n+1) {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+section .portBox table tr td {
+  width: 155px;
+  height: 43px;
+}
+body {
+  width: 100%;
+  height: 100%;
+  min-height: 630px;
+}
+body .bg {
+  width: 100%;
+  height: 100%;
+  min-height: 630px;
+  min-width: 980px;
+  background-image: url(../img/bg.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  z-index: -1;
+}
+h1 {
+  font-family: 'PTSansBold';
+  font-size: 30px;
+  line-height: 36px;
+  color: #424242;
+  margin: 0;
+  padding-left: 8px;
+  font-weight: normal;
+}
+h2 {
+  font-family: 'PTSansBold';
+  font-size: 25px;
+  line-height: 30px;
+  color: #424242;
+  padding-bottom: 10px;
+  font-weight: normal;
+}
+h3 {
+  font-family: 'PTSansBold';
+  font-size: 25px;
+  line-height: 30px;
+  color: #fcfdfd;
+  font-weight: normal;
+}
+#page {
+  margin: 0 auto;
+  width: 660px;
+  padding-top: 0px;
+}
+.demonstrations {
+  float: left;
+  clear: both;
+  width: 100%;
+  margin-bottom: 18px;
+}
+.demonstrations a {
+  float: left;
+  width: 140px;
+  height: 120px;
+  margin: 0 20px 13px 0;
+  cursor: pointer;
+}
+.demonstrations a:last-child {
+  margin-right: 0 ;
+}
+.demonstrations a img {
+  float: left;
+}
+.demonstrations .rightmost {
+  margin-right: 0;
+}
+@media (max-height: 630px) {
+  section {
+    position: static;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}

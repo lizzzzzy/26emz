@@ -1,0 +1,15 @@
+table{
+  
+  text-align: center;
+  font-size: 20px;
+  line-height: 20px;
+  font-family: "PT Sans";}
+  
+tr:nth-child(2n+2){
+  
+  background-color: rgba(255, 255, 255, 0.5);}
+
+td{
+  width: 155px;
+  height: 43px;
+}
